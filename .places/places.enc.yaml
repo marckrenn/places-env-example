@@ -1,0 +1,52 @@
+keys:
+  default: .places/keys/default
+  prod: .places/keys/prod
+  dev: .places/keys/dev
+  test: .places/keys/test
+
+environments:
+
+  local:
+    filepath: .env
+    watch: true
+    key: default
+
+  development:
+    filepath: .env.dev
+    alias: [dev]
+    key: dev
+
+  production:
+    filepath: .env.prod
+    alias: [prod]
+    key: prod
+
+variables:
+
+  PROJECT_NAME: encrypted(default|dev|prod):LNMYD5VjVm3fjTyFXG0u9/kZHsf2qi1oOnSAprgyUlwFthBHRdXXWw==|mkYkC7RVfSsCYr8KljnCkP+pK+Ppvv7fgqwu4nXAK0rcEwoxPbcQyA==|jzscXylMyAK/MRDKjrjiukYu+O1naxcMDhWXiyH9mwiYFxgiMAlscg==
+
+  HOST: encrypted(default|dev|prod):K8MYVK9dH3Xe00vEdCdv5Yqh0aqOiIEd77KJpg==|nVYkUI5rNDMDPMhL4q2l2/MsndJlQj6dt9mYyw==|iCscBBNygRq+b2eLHIpc5ix0d9/6ioyYuQy0Dg==
+
+  PORT:
+    local: encrypted(default):BsBgSbtLWifgXmMMmF7D7Bs2DPJLKBa4
+    dev: encrypted(dev):sFVcTZptcWEdSAYL5p+BFhTP3oVfzDtO
+    prod: encrypted(prod):pShkGQdCxEgk1C/q/ScOjLkOl36/pZZs
+
+  ADDRESS: encrypted(default|dev|prod):A8xVd6I7KU/atGqfYwsil+AieZaICtp49jZ4ePD8GgQGv/rP|tVlpc4MNAgkHW+kQqV/O8OaSTLLOv+YnS9zPlSugiFxj9l0F|oCRRJx4UtyC6CEbQsd7u2l8Vn7xHWKSRpdbFmRgQgxrnGbob
+
+  DOMAIN:
+    dev: encrypted(dev):tVlpa4JXdRczWsgulF654uerSLLHhPGUOI+OEtpMX9wUOiIS+bwJ27MP4YIYKW5w
+    prod: encrypted(prod):oCRRPx9OwD6OCWfujN+ZyF4sm7xJURhHrVKbxg7aPowBr1Gm7OPJs2j3GDiRrRKk
+
+  JSON_MULTILINE: |-
+    encrypted(default|dev|prod):LPNOWb9JLWjmuG6MT1APoPwgccf2tS45iU5jm/tci1549nLALvyZLsGnIQSZfsckXOmABaUiF+n61SA6xTwSh5Ig0k3vtx6nJw0EFA==|mmZyXZ5/Bi47V+0DhQTjx/qQROPpof2OF6XyCsN9R4Y+QHuDWIcXpvA3kI70nMJjWjkLohDkUlnOUrqdgS5S9t1Gcdr3h8wLRSnEgw==|jxtKCQNmsweGBELDnYXD7UMXl+1ndBRdgnjn3y+BT9Z1cncNO35Feic9ScCDebVxFeCTA8NOyHFyO5lfswtmu5O2Kr/UPhijzb6aog==
+
+  PUBLIC_KNOWLEDGE:
+    value: this value won't be encrypted
+    unencrypted: true
+
+  API_KEY:
+    local: encrypted(default):BNNsRrtOAG3ypFyASAg6r+wnG5/NhzFmiEpj3fZfk018z2rGBPyeLcOkLRqwR8wvRzw3/7+kU72BxpUtUoT7nQ==
+    dev: encrypted(dev):sntcC5lRAW0sdccPggTZ2v2HLrvGreGJFqLcSdlAT5U6al7bZ74Mo+Yktp3JptZ4mJOdIyH2d47qsJ+80QrB4Q==
+    prod: encrypted(prod):sAFgWxMXrx+RGGDPmYLhuEc6/bVLeBRZg3zr1jasacVydUkMBxhCeiYuWZipQL1o+3q+oKTXVWbRKpfzqVeZtQ==
+
