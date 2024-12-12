@@ -1,6 +1,6 @@
 # places-env-example
 
-This is an example / demo project for [places-env](https://github.com/marckrenn/places-env)
+This is an example / demo project for [_places-env_](https://github.com/marckrenn/places-env)
 
 ## Usage
 
