@@ -51,6 +51,6 @@ variables:
 
   API_KEY:
     local: encrypted(default):BNNsRrtOAG3ypFyASAg6r+wnG5/NhzFmiEpj3fZfk018z2rGBPyeLcOkLRqwR8wvRzw3/7+kU72BxpUtUoT7nQ==
-    dev: encrypted(dev):sntcC5lRAW0sdccPggTZ2v2HLrvGreGJFqLcSdlAT5U6al7bZ74Mo+Yktp3JptZ4mJOdIyH2d47qsJ+80QrB4Q==
+    dev: encrypted(dev):sSNYTZpoBW84Pc8PgjrF2f6HLrvFk+6aFqH9EtkmS5U5H0rfc5c5t/I0gNPJpslnEpplNcO3wcdjr0DVrr4RQw== # Changed in https://github.com/marckrenn/places-env-example/tree/1-update-dev-api_key
     prod: encrypted(prod):sAFgWxMXrx+RGGDPmYLhuEc6/bVLeBRZg3zr1jasacVydUkMBxhCeiYuWZipQL4//KFT6KcE8Q9O6AU5yXWp5A==
 
