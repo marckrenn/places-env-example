@@ -9,7 +9,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - uses: marckrenn/places-env-gha@v1
+      - name: places-env
+        uses: marckrenn/places-env-gha@v1
         with:
           version: "latest"
           keys: |
