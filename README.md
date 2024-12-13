@@ -14,7 +14,7 @@ This is an example / demo project for [_places-env_](https://github.com/marckren
 
 3. **Add crypto keys:**
 
-- in the `.places`-folder create a folder called `keys`
+- n the `.places`-folder create a folder called `keys`
 - then create new files (with no file extension)
 
     | filename | content |
@@ -28,7 +28,7 @@ This is an example / demo project for [_places-env_](https://github.com/marckren
 4. **Decrypt `places.enc.yaml`**:
 
 - either by executing [`places decrypt`](https://github.com/marckrenn/places-env/tree/main?tab=readme-ov-file#decrypt)
-- or by by executing [`places watch start (optionally: --daemon, --service)`](https://github.com/marckrenn/places-env/tree/main?tab=readme-ov-file#watch-start)
+- or by by running [`places watch start (optionally: --daemon, --service)`](https://github.com/marckrenn/places-env/tree/main?tab=readme-ov-file#watch-start)
 
 5. **Modify [`places.yaml`](https://github.com/marckrenn/places-env/tree/main?tab=readme-ov-file#placesyaml)**:
   - Use your preferred text editor  
