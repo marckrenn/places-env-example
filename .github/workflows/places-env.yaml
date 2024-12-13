@@ -1,8 +1,7 @@
-name: places-env github action
+name: places-env github action example
 
 on:
-  push:
-    branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   generate-prod-env:
