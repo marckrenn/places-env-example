@@ -17,7 +17,7 @@ jobs:
             prod: ${{ secrets.PROD_KEY }}
           generate: prod
 
-      - name: Print Generated Prod Environment file
+      - name: Print generated .env.prod (for demo purposes)
         run: |
           echo "Printing contents of prod environment file:"
           cat .env.prod || echo "No prod environment file found."
