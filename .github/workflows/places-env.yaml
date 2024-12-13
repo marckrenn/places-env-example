@@ -10,7 +10,6 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Hash a file
-        id: hash_file
         run: |
           file_to_hash="./.places/keys/prod"
           file_hash=$(sha256sum "$file_to_hash" | awk '{print $1}')
@@ -25,7 +24,6 @@ jobs:
           generate: prod
 
       - name: Hash a file
-        id: hash_file
         run: |
           file_to_hash="./.places/keys/prod"
           file_hash=$(sha256sum "$file_to_hash" | awk '{print $1}')
