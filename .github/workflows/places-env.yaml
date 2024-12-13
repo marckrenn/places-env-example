@@ -1,0 +1,23 @@
+name: places-env github action example
+
+on:
+  workflow_dispatch:
+
+jobs:
+  generate-prod-env:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: places-env
+        uses: marckrenn/places-env-gha@v1.0.1
+        with:
+          version: "latest"
+          keys: |
+            prod: ${{ secrets.PROD_KEY }}
+          generate: prod
+
+      - name: Print generated .env.prod (for demo purposes)
+        run: |
+          echo "Printing contents of prod environment file:"
+          cat .env.prod || echo "No prod environment file found."
