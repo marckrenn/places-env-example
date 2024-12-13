@@ -14,7 +14,7 @@ jobs:
         with:
           version: "latest"
           keys: |
-            prod: ${{ secrets.PROD_KEY }}
+            prod: 1234
           generate: prod
       
       - name: Print prod key for debugging
