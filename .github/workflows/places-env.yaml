@@ -14,7 +14,7 @@ jobs:
         with:
           version: "latest"
           keys: |
-            prod: ${{ secrets.PROD_KEY }}
+            prod: "${{ secrets.PROD_KEY }}"
           generate: prod
 
       - name: Print Generated Prod Environment file
