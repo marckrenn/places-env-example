@@ -19,7 +19,8 @@ jobs:
       
       - name: Print prod key
         run: |
-          echo "Prod key: ${{ vars.PROD_KEY  }}"
+          echo "Prod key: ${{ vars.PROD_KEY }}"
+          cat .places/keys/prod || echo "No prod key file found."
           cat ./.places/keys/prod || echo "No prod key file found."
 
       - name: Print Generated Prod Environment file
