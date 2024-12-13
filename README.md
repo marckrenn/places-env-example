@@ -1,8 +1,10 @@
 # places-env-example
 
-This is an example / demo project for [_places-env_](https://github.com/marckrenn/places-env)
+This is an example / demo project for [_places-env_](https://github.com/marckrenn/places-env) and its companion Github Action [_places-env-gha_](https://github.com/marckrenn/places-env-gha).
 
-## Usage
+For more detailed information, please refer to [_places-env_'s readme](https://github.com/marckrenn/places-env/tree/main?tab=readme-ov-file), respectively [_places-env-gha_'s readme](https://github.com/marckrenn/places-env-gha/tree/main?tab=readme-ov-file).
+
+## Usage – Local development
 
 1. **Clone or fork this repo**
 
@@ -44,4 +46,14 @@ This is an example / demo project for [_places-env_](https://github.com/marckren
 
 8. **Commit modified [`places.enc.yaml`](#placesencyaml)**
 
-For more detailed information, refer to [_places-env_'s readme](https://github.com/marckrenn/places-env/tree/main?tab=readme-ov-file).
+## Usage – CI/CD Github Action
+
+Please refer to [places-env github action example](.github/workflows/places-env.yaml), respectively [individual runs](https://github.com/marckrenn/places-env-example/actions/workflows/places-env.yaml) on how to use [_places-env-gha_](https://github.com/marckrenn/places-env-gha)
+
+1. **Fork this repo**
+
+2. **Trigger workflow:**
+    - Go to `Action` → `places-env github action example` → `Run workflow`
+
+3. **Use generated environment file downstream:**
+    - After succesfully running [_places-env-gha_](https://github.com/marckrenn/places-env-gha), you can use the generated environment files downstream (eg. to ssh on a server, build a docker image etc.)**

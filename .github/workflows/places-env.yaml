@@ -10,20 +10,14 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: places-env
-        uses: marckrenn/places-env-gha@v1.0.0
+        uses: marckrenn/places-env-gha@v1.0.1
         with:
           version: "latest"
           keys: |
-            prod: ${{ vars.PROD_KEY }}
+            prod: ${{ secrets.PROD_KEY }}
           generate: prod
-      
-      - name: Print prod key
-        run: |
-          echo "Prod key: ${{ vars.PROD_KEY }}"
-          cat .places/keys/prod || echo "No prod key file found."
-          cat ./.places/keys/prod || echo "No prod key file found."
 
-      - name: Print Generated Prod Environment file
+      - name: Print generated .env.prod (for demo purposes)
         run: |
           echo "Printing contents of prod environment file:"
           cat .env.prod || echo "No prod environment file found."
