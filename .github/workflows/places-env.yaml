@@ -14,7 +14,8 @@ jobs:
         with:
           version: "latest"
           keys: |
-            prod: ${{ vars.PROD_KEY }}
+            prod: |
+              ${{ vars.PROD_KEY }}
           generate: prod
       
       - name: Print prod key
