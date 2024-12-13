@@ -1,6 +1,6 @@
 # places-env-example
 
-This is an example / demo project for [_places-env_](https://github.com/marckrenn/places-env) and its corresponding Github Action [_places-env-gha_](https://github.com/marckrenn/places-env-gha).
+This is an example / demo project for [_places-env_](https://github.com/marckrenn/places-env) and its companion Github Action [_places-env-gha_](https://github.com/marckrenn/places-env-gha).
 
 For more detailed information, please refer to [_places-env_'s readme](https://github.com/marckrenn/places-env/tree/main?tab=readme-ov-file), respectively [_places-env-gha_'s readme](https://github.com/marckrenn/places-env-gha/tree/main?tab=readme-ov-file).
 
