@@ -163,7 +163,9 @@ cython_debug/
 #.idea/
 
 # Places
-.places/keys
+.places/keys/default
+.places/keys/dev
+.places/keys/topsecret
 places.yaml
 
 # Places - generated environments
