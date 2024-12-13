@@ -14,8 +14,13 @@ jobs:
         with:
           version: "latest"
           keys: |
-            prod: "${{ secrets.PROD_KEY }}"
+            prod: ${{ vars.PROD_KEY }}
           generate: prod
+      
+      - name: Print prod key
+        run: |
+          echo "Prod key: ${{ vars.PROD_KEY  }}"
+          cat ./.places/keys/prod || echo "No prod key file found."
 
       - name: Print Generated Prod Environment file
         run: |
