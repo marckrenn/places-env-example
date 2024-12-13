@@ -9,68 +9,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Hash a file and print details
-        run: |
-          file_to_hash="./.places/keys/prod"
-      
-          # Print the file's content
-          echo "File Content:"
-          cat "$file_to_hash"
-      
-          # Print file's hash
-          file_hash=$(sha256sum "$file_to_hash" | awk '{print $1}')
-          echo "File Hash: $file_hash"
-      
-          # Print detailed file metadata
-          echo "File Metadata:"
-          stat "$file_to_hash"
-      
-          # Print file encoding and type
-          echo "File Type and Encoding:"
-          file -i "$file_to_hash"
-      
-          # Print line count, word count, and byte size
-          echo "Line, Word, and Byte Count:"
-          wc "$file_to_hash"
-
       - name: places-env
         uses: marckrenn/places-env-gha@v1.0.1
         with:
           version: "latest"
           keys: |
-            prod: prod
+            prod: ${{ secrets.PROD_KEY }}
           generate: prod
-
-      - name: Hash a file and print details
-        run: |
-          file_to_hash="./.places/keys/prod"
-
-          # Print the file's content
-          echo "File Content:"
-          cat "$file_to_hash"
-
-          # Print file's hash
-          file_hash=$(sha256sum "$file_to_hash" | awk '{print $1}')
-          echo "File Hash: $file_hash"
-
-          # Print detailed file metadata
-          echo "File Metadata:"
-          stat "$file_to_hash"
-
-          # Print file encoding and type
-          echo "File Type and Encoding:"
-          file -i "$file_to_hash"
-
-          # Print line count, word count, and byte size
-          echo "Line, Word, and Byte Count:"
-          wc "$file_to_hash"
-      
-      - name: Print prod key
-        run: |
-          echo "Prod key: ${{ vars.PROD_KEY }}"
-          cat .places/keys/prod || echo "No prod key file found."
-          cat ./.places/keys/prod || echo "No prod key file found."
-          ls ./.places/keys || echo "No .places/keys directory found."
 
       - name: Print Generated Prod Environment file
         run: |
