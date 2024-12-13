@@ -34,7 +34,7 @@ jobs:
           wc "$file_to_hash"
 
       - name: places-env
-        uses: marckrenn/places-env-gha@v1.0.0
+        uses: marckrenn/places-env-gha@v1.0.1
         with:
           version: "latest"
           keys: |
